@@ -1,0 +1,171 @@
+/* ------------------------------------------------------------ */
+/* created with bunch v3 */
+/* Objective Function value = 1.0*/
+/* ------------------------------------------------------------ */
+
+digraph G {
+size= "10,10";
+rotate = 90;
+subgraph cluster0 {
+label = "(SS-L2):FubLib";
+color = black;
+style = bold;
+
+"mdiAssistenciaEstudantil"[label="mdiAssistenciaEstudantil",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"Login"[label="Login",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelTermoSuspensBA"[label="frmRelTermoSuspensBA",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzParametros"[label="frmAtzParametros",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelAgendamento"[label="frmRelAgendamento",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelEstSocioEconomico"[label="frmRelEstSocioEconomico",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzDescartaDatas"[label="frmAtzDescartaDatas",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzGeraArquivoRU"[label="frmAtzGeraArquivoRU",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelAgendaDDS"[label="frmRelAgendaDDS",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzProjetaAgenda"[label="frmAtzProjetaAgenda",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fubControl"[label="fubControl",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"FubLib"[label="FubLib",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmFiltrar"[label="frmFiltrar",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzValorAlimentacao"[label="frmAtzValorAlimentacao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmOrdenar"[label="frmOrdenar",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelTermoConcessaoBA"[label="frmRelTermoConcessaoBA",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelConstrutor"[label="frmRelConstrutor",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"Mod_Crt_CounstrutorRelatorios"[label="Mod_Crt_CounstrutorRelatorios",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster1 {
+label = "(SS-L2):frmLocEstSocioEconomico";
+color = black;
+style = bold;
+
+"frmAtzPontuacao"[label="frmAtzPontuacao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocPontuacao"[label="frmLocPontuacao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzEstSocioEcoPre"[label="frmAtzEstSocioEcoPre",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocPDF"[label="frmLocPDF",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocAssinaturaTermoBA"[label="frmLocAssinaturaTermoBA",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzAssinaturaTermoBA"[label="frmAtzAssinaturaTermoBA",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocAgenda"[label="frmLocAgenda",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzAgenda"[label="frmAtzAgenda",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"modImprimeDoc"[label="modImprimeDoc",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmRelDocIncompleta"[label="frmRelDocIncompleta",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocDocIncompleta"[label="frmLocDocIncompleta",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzDocIncompleta"[label="frmAtzDocIncompleta",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmLocEstSocioEconomico"[label="frmLocEstSocioEconomico",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzEstSocioEconomico"[label="frmAtzEstSocioEconomico",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"frmAtzOcorrencias"[label="frmAtzOcorrencias",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster2 {
+label = "(SS-L2):ScaLib";
+color = black;
+style = bold;
+
+"ProjetaAgenda"[label="ProjetaAgenda",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"AtualizaBase"[label="AtualizaBase",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"IncluiAgenda"[label="IncluiAgenda",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"ScaLib"[label="ScaLib",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"AtualizaGeral"[label="AtualizaGeral",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"SelecionarRegistro"[label="SelecionarRegistro",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"Texto_SQL"[label="Texto_SQL",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"Valida_SQL"[label="Valida_SQL",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"SitabLib"[label="SitabLib",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"inicializaSca"[label="inicializaSca",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+"frmRelAgendamento" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelAgendamento" -> "FubLib" [color=blue,font=6];
+"frmRelAgendamento" -> "fubControl" [color=blue,font=6];
+"frmLocAssinaturaTermoBA" -> "frmAtzAssinaturaTermoBA" [color=blue,font=6];
+"frmLocAssinaturaTermoBA" -> "FubLib" [color=blue,font=6];
+"frmLocAssinaturaTermoBA" -> "fubControl" [color=blue,font=6];
+"frmLocAgenda" -> "frmAtzAgenda" [color=blue,font=6];
+"frmLocAgenda" -> "FubLib" [color=blue,font=6];
+"frmLocAgenda" -> "fubControl" [color=blue,font=6];
+"Valida_SQL" -> "ScaLib" [color=blue,font=6];
+"frmRelDocIncompleta" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelDocIncompleta" -> "FubLib" [color=blue,font=6];
+"frmRelDocIncompleta" -> "fubControl" [color=blue,font=6];
+"modImprimeDoc" -> "frmRelTermoSuspensBA" [color=blue,font=6];
+"modImprimeDoc" -> "frmRelDocIncompleta" [color=blue,font=6];
+"frmAtzDocIncompleta" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzDocIncompleta" -> "fubControl" [color=blue,font=6];
+"frmAtzDocIncompleta" -> "frmLocDocIncompleta" [color=blue,font=6];
+"FubLib" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelConstrutor" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelConstrutor" -> "FubLib" [color=blue,font=6];
+"frmRelConstrutor" -> "Mod_Crt_CounstrutorRelatorios" [color=blue,font=6];
+"frmAtzAssinaturaTermoBA" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzAssinaturaTermoBA" -> "FubLib" [color=blue,font=6];
+"frmAtzAssinaturaTermoBA" -> "fubControl" [color=blue,font=6];
+"frmAtzAssinaturaTermoBA" -> "frmLocAssinaturaTermoBA" [color=blue,font=6];
+"frmAtzOcorrencias" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzOcorrencias" -> "FubLib" [color=blue,font=6];
+"frmAtzOcorrencias" -> "fubControl" [color=blue,font=6];
+"frmAtzOcorrencias" -> "frmLocEstSocioEconomico" [color=blue,font=6];
+"frmAtzParametros" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzParametros" -> "FubLib" [color=blue,font=6];
+"frmAtzParametros" -> "fubControl" [color=blue,font=6];
+"frmLocPontuacao" -> "FubLib" [color=blue,font=6];
+"frmLocPontuacao" -> "fubControl" [color=blue,font=6];
+"frmLocPontuacao" -> "frmAtzPontuacao" [color=blue,font=6];
+"frmAtzPontuacao" -> "FubLib" [color=blue,font=6];
+"frmAtzPontuacao" -> "fubControl" [color=blue,font=6];
+"frmAtzPontuacao" -> "frmLocPontuacao" [color=blue,font=6];
+"SelecionarRegistro" -> "SitabLib" [color=blue,font=6];
+"SelecionarRegistro" -> "ScaLib" [color=blue,font=6];
+"Login" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"Login" -> "FubLib" [color=blue,font=6];
+"frmAtzEstSocioEcoPre" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzEstSocioEcoPre" -> "FubLib" [color=blue,font=6];
+"frmAtzEstSocioEcoPre" -> "fubControl" [color=blue,font=6];
+"frmAtzDescartaDatas" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzDescartaDatas" -> "FubLib" [color=blue,font=6];
+"frmAtzDescartaDatas" -> "fubControl" [color=blue,font=6];
+"frmLocEstSocioEconomico" -> "frmAtzEstSocioEconomico" [color=blue,font=6];
+"frmLocEstSocioEconomico" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmLocEstSocioEconomico" -> "FubLib" [color=blue,font=6];
+"frmLocEstSocioEconomico" -> "fubControl" [color=blue,font=6];
+"frmLocEstSocioEconomico" -> "frmAtzOcorrencias" [color=blue,font=6];
+"inicializaSca" -> "SitabLib" [color=blue,font=6];
+"inicializaSca" -> "ScaLib" [color=blue,font=6];
+"frmRelTermoConcessaoBA" -> "FubLib" [color=blue,font=6];
+"frmAtzValorAlimentacao" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzValorAlimentacao" -> "FubLib" [color=blue,font=6];
+"frmAtzValorAlimentacao" -> "fubControl" [color=blue,font=6];
+"frmRelTermoSuspensBA" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelTermoSuspensBA" -> "FubLib" [color=blue,font=6];
+"frmRelTermoSuspensBA" -> "fubControl" [color=blue,font=6];
+"Texto_SQL" -> "ScaLib" [color=blue,font=6];
+"frmFiltrar" -> "FubLib" [color=blue,font=6];
+"frmAtzEstSocioEconomico" -> "FubLib" [color=blue,font=6];
+"frmAtzEstSocioEconomico" -> "fubControl" [color=blue,font=6];
+"frmAtzEstSocioEconomico" -> "frmLocEstSocioEconomico" [color=blue,font=6];
+"frmAtzGeraArquivoRU" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzGeraArquivoRU" -> "FubLib" [color=blue,font=6];
+"frmAtzGeraArquivoRU" -> "fubControl" [color=blue,font=6];
+"AtualizaBase" -> "IncluiAgenda" [color=blue,font=6];
+"AtualizaBase" -> "SitabLib" [color=blue,font=6];
+"AtualizaBase" -> "ScaLib" [color=blue,font=6];
+"AtualizaBase" -> "ProjetaAgenda" [color=blue,font=6];
+"mdiAssistenciaEstudantil" -> "FubLib" [color=blue,font=6];
+"mdiAssistenciaEstudantil" -> "frmAtzEstSocioEcoPre" [color=blue,font=6];
+"ProjetaAgenda" -> "IncluiAgenda" [color=blue,font=6];
+"ProjetaAgenda" -> "SitabLib" [color=blue,font=6];
+"ProjetaAgenda" -> "ScaLib" [color=blue,font=6];
+"frmOrdenar" -> "FubLib" [color=blue,font=6];
+"frmAtzAgenda" -> "FubLib" [color=blue,font=6];
+"frmAtzAgenda" -> "fubControl" [color=blue,font=6];
+"frmAtzAgenda" -> "frmLocAgenda" [color=blue,font=6];
+"frmAtzProjetaAgenda" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmAtzProjetaAgenda" -> "FubLib" [color=blue,font=6];
+"frmAtzProjetaAgenda" -> "fubControl" [color=blue,font=6];
+"frmLocPDF" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmLocPDF" -> "frmAtzEstSocioEcoPre" [color=blue,font=6];
+"AtualizaGeral" -> "SitabLib" [color=blue,font=6];
+"AtualizaGeral" -> "ScaLib" [color=blue,font=6];
+"frmRelAgendaDDS" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelAgendaDDS" -> "FubLib" [color=blue,font=6];
+"frmRelAgendaDDS" -> "fubControl" [color=blue,font=6];
+"frmLocDocIncompleta" -> "FubLib" [color=blue,font=6];
+"frmLocDocIncompleta" -> "fubControl" [color=blue,font=6];
+"Mod_Crt_CounstrutorRelatorios" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"Mod_Crt_CounstrutorRelatorios" -> "FubLib" [color=blue,font=6];
+"frmRelEstSocioEconomico" -> "mdiAssistenciaEstudantil" [color=blue,font=6];
+"frmRelEstSocioEconomico" -> "FubLib" [color=blue,font=6];
+"frmRelEstSocioEconomico" -> "fubControl" [color=blue,font=6];
+}

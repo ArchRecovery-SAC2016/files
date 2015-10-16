@@ -1,0 +1,274 @@
+/* ------------------------------------------------------------ */
+/* created with bunch v3 */
+/* Objective Function value = 1.2164073550212164*/
+/* ------------------------------------------------------------ */
+
+digraph G {
+size= "10,10";
+rotate = 90;
+subgraph cluster0 {
+label = "(SS-L1):fast.core";
+color = black;
+style = bold;
+
+"fast.web.autenticacao"[label="fast.web.autenticacao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.web"[label="fast.core.web",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.factory"[label="fast.core.factory",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core"[label="fast.core",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.locator"[label="fast.core.locator",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.camada"[label="fast.core.camada",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.query"[label="fast.core.query",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.componentes"[label="fast.web.componentes",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast."[label="fast.",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster1 {
+label = "(SS-L1):fast";
+color = black;
+style = bold;
+
+"fast.web.faces"[label="fast.web.faces",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web"[label="fast.web",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.converter"[label="fast.web.converter",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.validator"[label="fast.web.validator",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.composite"[label="fast.web.composite",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.sca"[label="fast.core.sca",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.config"[label="fast.core.config",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast"[label="fast",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.servlet"[label="fast.web.servlet",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.filter"[label="fast.web.filter",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster2 {
+label = "(SS-L1):fast.core.exception";
+color = black;
+style = bold;
+
+"fast.core.exception"[label="fast.core.exception",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.exception"[label="siex.exception",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster3 {
+label = "(SS-L1):siex.visao";
+color = black;
+style = bold;
+
+"siex.visao"[label="siex.visao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.pojo"[label="siex.pojo",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.vo"[label="siex.vo",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster4 {
+label = "(SS-L1):fast.core.util";
+color = black;
+style = bold;
+
+"fast.web.util"[label="fast.web.util",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.transaction"[label="fast.core.transaction",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.annotation"[label="fast.core.annotation",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.util"[label="fast.core.util",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.camada"[label="fast.web.camada",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster5 {
+label = "(SS-L1):siex.persistencia";
+color = black;
+style = bold;
+
+"siex"[label="siex",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.negocio"[label="siex.negocio",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.persistencia"[label="siex.persistencia",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.conversor"[label="siex.conversor",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster6 {
+label = "(SS-L1):fast.core.logger";
+color = black;
+style = bold;
+
+"fast.core.logger"[label="fast.core.logger",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.taglib"[label="fast.web.taglib",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.web.listener"[label="fast.web.listener",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster7 {
+label = "(SS-L1):fast.web.visao";
+color = black;
+style = bold;
+
+"fast.web.visao"[label="fast.web.visao",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.relatorio"[label="fast.core.relatorio",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"fast.core.pagina"[label="fast.core.pagina",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster8 {
+label = "(SS-L1):siex.enums";
+color = black;
+style = bold;
+
+"siex.util"[label="siex.util",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"siex.enums"[label="siex.enums",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+"fast.core.web" -> "fast" [color=blue,font=6];
+"fast.core.web" -> "fast.core" [color=blue,font=6];
+"fast.web.composite" -> "fast.web" [color=blue,font=6];
+"fast.web.composite" -> "fast.web.visao" [color=blue,font=6];
+"fast.web.composite" -> "fast.core.annotation" [color=blue,font=6];
+"fast.web.composite" -> "fast" [color=blue,font=6];
+"fast.web.composite" -> "fast.web.converter" [color=blue,font=6];
+"fast.web.composite" -> "fast.core" [color=blue,font=6];
+"fast.web.composite" -> "fast.core.camada" [color=blue,font=6];
+"fast.core.query" -> "fast" [color=blue,font=6];
+"fast.core.query" -> "fast.core" [color=blue,font=6];
+"fast.web.componentes" -> "fast.web" [color=blue,font=6];
+"fast.web.componentes" -> "fast.core.sca" [color=blue,font=6];
+"fast.web.componentes" -> "fast" [color=blue,font=6];
+"fast.web.componentes" -> "fast." [color=blue,font=6];
+"fast.web.componentes" -> "fast.core" [color=blue,font=6];
+"fast.web.componentes" -> "fast.core.logger" [color=blue,font=6];
+"siex.exception" -> "fast" [color=blue,font=6];
+"siex.exception" -> "fast.core.exception" [color=blue,font=6];
+"siex.exception" -> "fast.core" [color=blue,font=6];
+"siex.exception" -> "siex" [color=blue,font=6];
+"siex.vo" -> "siex.pojo" [color=blue,font=6];
+"siex.vo" -> "siex" [color=blue,font=6];
+"fast.core" -> "fast" [color=blue,font=6];
+"fast.core.transaction" -> "fast.core.annotation" [color=blue,font=6];
+"fast.core.transaction" -> "fast" [color=blue,font=6];
+"fast.core.transaction" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.transaction" -> "fast.core" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.pagina" [color=blue,font=6];
+"fast.core.sca" -> "fast" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.exception" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.locator" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.config" [color=blue,font=6];
+"fast.core.sca" -> "fast.core" [color=blue,font=6];
+"fast.core.sca" -> "fast.core.camada" [color=blue,font=6];
+"siex.pojo" -> "fast" [color=blue,font=6];
+"siex.pojo" -> "fast.core" [color=blue,font=6];
+"siex.pojo" -> "fast.core.camada" [color=blue,font=6];
+"siex.pojo" -> "siex" [color=blue,font=6];
+"siex.visao" -> "fast.web.visao" [color=blue,font=6];
+"siex.visao" -> "siex.negocio" [color=blue,font=6];
+"siex.visao" -> "fast" [color=blue,font=6];
+"siex.visao" -> "siex" [color=blue,font=6];
+"siex.visao" -> "siex.vo" [color=blue,font=6];
+"siex.visao" -> "siex.pojo" [color=blue,font=6];
+"siex.visao" -> "fast.core" [color=blue,font=6];
+"siex.visao" -> "fast.core.util" [color=blue,font=6];
+"siex.visao" -> "fast.web" [color=blue,font=6];
+"fast.web.validator" -> "fast.web" [color=blue,font=6];
+"fast.web.validator" -> "fast" [color=blue,font=6];
+"siex.conversor" -> "siex" [color=blue,font=6];
+"fast.core.locator" -> "fast" [color=blue,font=6];
+"fast.core.locator" -> "fast.core" [color=blue,font=6];
+"siex.persistencia" -> "fast.core.camada" [color=blue,font=6];
+"siex.persistencia" -> "fast" [color=blue,font=6];
+"siex.persistencia" -> "siex" [color=blue,font=6];
+"siex.persistencia" -> "siex.exception" [color=blue,font=6];
+"siex.persistencia" -> "siex.vo" [color=blue,font=6];
+"siex.persistencia" -> "siex.pojo" [color=blue,font=6];
+"siex.persistencia" -> "fast.core.config" [color=blue,font=6];
+"siex.persistencia" -> "siex.enums" [color=blue,font=6];
+"siex.persistencia" -> "fast.core" [color=blue,font=6];
+"siex.persistencia" -> "fast.core.pagina" [color=blue,font=6];
+"siex.persistencia" -> "fast.core.util" [color=blue,font=6];
+"siex.negocio" -> "fast.core.camada" [color=blue,font=6];
+"siex.negocio" -> "fast" [color=blue,font=6];
+"siex.negocio" -> "siex" [color=blue,font=6];
+"siex.negocio" -> "siex.exception" [color=blue,font=6];
+"siex.negocio" -> "siex.pojo" [color=blue,font=6];
+"siex.negocio" -> "siex.enums" [color=blue,font=6];
+"siex.negocio" -> "fast.core" [color=blue,font=6];
+"siex.negocio" -> "siex.persistencia" [color=blue,font=6];
+"siex.negocio" -> "siex.util" [color=blue,font=6];
+"siex.negocio" -> "fast.core.pagina" [color=blue,font=6];
+"fast.web.util" -> "fast.core.util" [color=blue,font=6];
+"fast.web.util" -> "fast.web" [color=blue,font=6];
+"fast.web.util" -> "fast.core.annotation" [color=blue,font=6];
+"fast.web.util" -> "fast" [color=blue,font=6];
+"fast.web.util" -> "fast.core" [color=blue,font=6];
+"fast.web.faces" -> "fast.web" [color=blue,font=6];
+"fast.web.faces" -> "fast" [color=blue,font=6];
+"fast.core.factory" -> "fast.core.util" [color=blue,font=6];
+"fast.core.factory" -> "fast.core.annotation" [color=blue,font=6];
+"fast.core.factory" -> "fast" [color=blue,font=6];
+"fast.core.factory" -> "fast.core.exception" [color=blue,font=6];
+"fast.core.factory" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.factory" -> "fast.core" [color=blue,font=6];
+"fast.core.factory" -> "fast.core.camada" [color=blue,font=6];
+"fast.core.util" -> "fast.web" [color=blue,font=6];
+"fast.core.util" -> "fast" [color=blue,font=6];
+"fast.core.util" -> "fast.web.camada" [color=blue,font=6];
+"fast.core.util" -> "fast.core" [color=blue,font=6];
+"fast.web.filter" -> "fast.web" [color=blue,font=6];
+"fast.web.filter" -> "fast.core.sca" [color=blue,font=6];
+"fast.web.filter" -> "fast" [color=blue,font=6];
+"fast.web.filter" -> "fast.core" [color=blue,font=6];
+"fast.web.filter" -> "fast.core.logger" [color=blue,font=6];
+"fast.web.filter" -> "fast.core.config" [color=blue,font=6];
+"fast.web.filter" -> "fast.core.web" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.relatorio" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.logger" [color=blue,font=6];
+"fast.web.servlet" -> "fast" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.sca" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.web" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.config" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core" [color=blue,font=6];
+"fast.web.servlet" -> "fast.web" [color=blue,font=6];
+"fast.web.servlet" -> "fast.core.util" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.annotation" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.relatorio" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.locator" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.camada" -> "fast" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.sca" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.query" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.exception" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.web" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.config" [color=blue,font=6];
+"fast.core.camada" -> "fast.core" [color=blue,font=6];
+"fast.core.camada" -> "fast.core.pagina" [color=blue,font=6];
+"fast.web.autenticacao" -> "fast.web" [color=blue,font=6];
+"fast.web.autenticacao" -> "fast" [color=blue,font=6];
+"fast.web.autenticacao" -> "fast.core" [color=blue,font=6];
+"fast.web.autenticacao" -> "fast.core.logger" [color=blue,font=6];
+"fast.web.autenticacao" -> "fast.core.web" [color=blue,font=6];
+"fast.web.taglib" -> "fast.web" [color=blue,font=6];
+"fast.web.taglib" -> "fast.core.sca" [color=blue,font=6];
+"fast.web.taglib" -> "fast" [color=blue,font=6];
+"fast.web.taglib" -> "fast.core" [color=blue,font=6];
+"fast.web.taglib" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.pagina" -> "fast" [color=blue,font=6];
+"fast.core.pagina" -> "fast.core" [color=blue,font=6];
+"fast.core.relatorio" -> "fast" [color=blue,font=6];
+"fast.core.relatorio" -> "fast.core" [color=blue,font=6];
+"siex.enums" -> "siex" [color=blue,font=6];
+"fast.core.logger" -> "fast" [color=blue,font=6];
+"fast.core.logger" -> "fast.core" [color=blue,font=6];
+"fast.web.visao" -> "fast.core.camada" [color=blue,font=6];
+"fast.web.visao" -> "fast.core.annotation" [color=blue,font=6];
+"fast.web.visao" -> "fast.core.relatorio" [color=blue,font=6];
+"fast.web.visao" -> "fast.web.util" [color=blue,font=6];
+"fast.web.visao" -> "fast" [color=blue,font=6];
+"fast.web.visao" -> "fast.core.exception" [color=blue,font=6];
+"fast.web.visao" -> "fast.core" [color=blue,font=6];
+"fast.web.visao" -> "fast.core.pagina" [color=blue,font=6];
+"fast.web.visao" -> "fast.web" [color=blue,font=6];
+"fast.core.annotation" -> "fast" [color=blue,font=6];
+"fast.core.annotation" -> "fast.core" [color=blue,font=6];
+"fast.web.listener" -> "fast.web" [color=blue,font=6];
+"fast.web.listener" -> "fast" [color=blue,font=6];
+"fast.web.listener" -> "fast.core" [color=blue,font=6];
+"fast.web.listener" -> "fast.core.logger" [color=blue,font=6];
+"fast.web.listener" -> "fast.core.web" [color=blue,font=6];
+"fast.core.config" -> "fast" [color=blue,font=6];
+"fast.core.config" -> "fast.core.exception" [color=blue,font=6];
+"fast.core.config" -> "fast.core.logger" [color=blue,font=6];
+"fast.core.config" -> "fast.core" [color=blue,font=6];
+"fast.core.exception" -> "fast" [color=blue,font=6];
+"fast.core.exception" -> "fast.core" [color=blue,font=6];
+"fast.web.converter" -> "fast.web" [color=blue,font=6];
+"fast.web.converter" -> "fast.web.visao" [color=blue,font=6];
+"fast.web.converter" -> "fast.core.annotation" [color=blue,font=6];
+"fast.web.converter" -> "fast" [color=blue,font=6];
+"fast.web.converter" -> "fast.core" [color=blue,font=6];
+"fast.web.converter" -> "fast.core.camada" [color=blue,font=6];
+"fast.web" -> "fast" [color=blue,font=6];
+"siex.util" -> "siex.enums" [color=blue,font=6];
+"siex.util" -> "siex.exception" [color=blue,font=6];
+"siex.util" -> "siex" [color=blue,font=6];
+}
